@@ -1,19 +1,18 @@
 #include <iostream>
 #include <cmath>
-#include <Windows.h>
 
 using namespace std;
 
 int main()
 {
-	SetConsoleOutputCP(1251);
-	int value = NULL;
-	int result = NULL;
+	double value, result;
 
-	cout << "¬вед≥ть агрумент формули: ";
+	cout << "Enter the formula argument: ";
 	cin >> value;
 
 	result = 3*pow(value, 3) - 2*pow(value, 2) + 3*value - 1;
 
-	cout << result;
+	cout << "Result: " << result;
+
+	return 0;
 }
